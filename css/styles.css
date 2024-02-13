@@ -35,3 +35,9 @@ li {
 body {
   background-color: bisque;
 }
+
+footer {
+  display: flex;
+  justify-content: center;
+  padding-top: 5%;
+}

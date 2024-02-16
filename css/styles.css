@@ -3,26 +3,16 @@ h1 {
   padding: 20px 10px;
 }
 
-.search-icon {
-  width: 10px;
-  padding-left: 50px;
-}
-
 button:hover {
   background-color: blueviolet;
   color: white;
 }
 
-.cloud-icon {
-  size: 10px;
-  color: blueviolet;
-  padding-left: 50px;
-  margin-right: 50px;
-}
-
 li {
   list-style: none;
   padding: 100px;
+  display: flex;
+  justify-content: space-around;
 }
 
 .center {
@@ -39,5 +29,6 @@ body {
 footer {
   display: flex;
   justify-content: center;
-  padding-top: 5%;
+  align-items: center;
+  padding-top: 10%;
 }

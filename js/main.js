@@ -1,19 +1,36 @@
 /**
- * event the object to change input
+ * event funtion is my object  tha will  change my input
  */
 
 function search(event) {
   event.preventDefault();
 
   let searchInput = document.querySelector("#search-text-input");
+  let cityElement = document.querySelector("#temperature");
   let h1 = document.querySelector("h1");
 
-  if (searchInput.value) {
-    h1.innerHTML = `${searchInput.value}...`;
+  let city = searchInput.value;
+  if (city) {
+    let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=46f53o0114a0et1fb464bc0d734f573e&units=metric`;
+
+    axios.get(apiUrl).then(showTemperature);
+    cityElement.innerHTML = city;
+    h1.innerHTML = `${city}...`;
   } else {
+    cityElement.innerHTML = "";
     h1.innerHTML = "";
-    alert("Please type a city");
+    alert("Please enter a city");
   }
+}
+
+function showTemperature(response) {
+  //console.log(response);
+  //console.log(response.data);
+  let temperature = response.data.temperature.current;
+  //console.log(response.data.temperature.current);
+  let cityElement = document.querySelector("#temperature");
+  cityElement.innerHTML = temperature;
+  //console.log(response.data.city);
 }
 
 let form = document.querySelector("#searchTab");
@@ -22,23 +39,6 @@ form.addEventListener("submit", search);
 /**
  * calling api axios
  */
-
-let city = "Sydney";
-let apiUrl =
-  "https://api.shecodes.io/weather/v1/current?query=${city}&key=46f53o0114a0et1fb464bc0d734f573e&units=metric";
-
-function showTemperature(response) {
-  //console.log(response);
-  //console.log(response.data);
-  let temperatureElement = document.querySelector("#temperature");
-  let temperature = response.data.temperature.current;
-  //console.log(response.data.temperature.current);
-  temperatureElement.innerHTML = temperature;
-
-  //console.log(response.data.city);
-}
-
-axios.get(apiUrl).then(showTemperature);
 
 /**
  * method  need to returns a collection of elements with the given name.

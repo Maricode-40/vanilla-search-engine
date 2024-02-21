@@ -1,5 +1,5 @@
 h1 {
-  color: rgb(128, 0, 79);
+  color: whitesmoke;
   padding: 20px 10px;
 }
 
@@ -13,6 +13,7 @@ li {
   padding: 100px;
   display: flex;
   justify-content: space-around;
+  background-color: rgba(147, 178, 215, 0.877);
 }
 
 .center {
@@ -23,7 +24,7 @@ li {
 }
 
 body {
-  background-color: bisque;
+  background-image: url(../img/cloud.gif);
 }
 
 footer {
@@ -31,4 +32,23 @@ footer {
   justify-content: center;
   align-items: center;
   padding-top: 10%;
+  background-color: rgba(77, 183, 183, 0.806);
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  font-size: larger;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+#temperature {
+  background-color: rgba(94, 208, 228, 0.845);
+  font-weight: bolder;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: xx-large;
+}
+
+p {
+  font-size: x-large;
+  color: rgba(22, 15, 75, 0.881);
 }

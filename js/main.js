@@ -27,13 +27,10 @@ function search(event) {
 }
 
 function showTemperature(response) {
-  //console.log(response);
-  //console.log(response.data);
   let temperature = Math.round(response.data.temperature.current);
-  //console.log(response.data.temperature.current);
+
   let cityElement = document.querySelector("#temperature");
-  cityElement.innerHTML = temperature;
-  //console.log(response.data.city);
+  cityElement.innerHTML = temperature + "°";
 }
 
 let form = document.querySelector("#searchTab");

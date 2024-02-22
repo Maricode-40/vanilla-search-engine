@@ -2,11 +2,13 @@
 
 # Vanilla Search Engine Project
 
-<em> Welcome to my Vanilla Weather App project </em>
+<em> Welcome to my Vanilla Weather App Project </em>
 
 ### General Data
 
-**- Project Designer:** Marissa Rico
+**- Project Designer:**
+
+Marissa Rico
 
 **- Project Tittle:**
 
@@ -15,20 +17,26 @@ Vanilla Weather App project
 <details>
   <summary>Table of Contents </summary>
   <ol>
-  <li><a href="#objetivo-🎯">Objetive</a></li>
-  <li><a href="#sobre-el-proyecto-🔎">About the Project</a></li>
-  <li><a href="#deploy-🚀">Deploy</a></li>
-  <li><a href="#vistas">Views</a></li>
-  <li><a href="#licencia">Licence</a></li>
-  <li><a href="#contacto">Contact</a></li>
+  <li><a href="#objetive-🎯">Objetive</a></li>
+  <li><a href="#About the Project-🔎">About the Project</a></li>
+  <li><a href="#Deploy-🚀">Deploy</a></li>
+  <li><a href="#Views">Views</a></li>
+  <li><a href="#Licence">Licence</a></li>
+  <li><a href="#Contact">Contact</a></li>
   </ol>
 </details>
-## Objetive🎯
+
+## Objective🎯
+
+This weather application will provide you with real-time weather information, forecasts, date and time in other cities which can help you make better decisions about your day-to-day activities.
 
 ## About the project-🔎
 
-I mainly worked with tools such as Bootstrap, html, css and flex to create this Responsive and Minimalistic Weather App.
-I have also included some javascript basic functions to create a Search Engine that will give you the accurate weather of the city you search for. I'm including a README and the project is hosted on Netlify.
+I mainly worked with tools such as Bootstrap, html5, CSS3, ES6, and flex to create this Responsive and Minimalistic Weather App.
+
+I have also included some javascript basic functions to create the Search Engine that will give you the accurate weather Data of the city you search for.
+
+The project is hosted on Netlify.
 
 ## Deploy 🚀 🚀
 
@@ -36,8 +44,12 @@ I have also included some javascript basic functions to create a Search Engine t
 
 ## Views
 
-<img src="#">
-<img src="#">
+You will be able to search for any city and get the accurate date, time and weather.
+<img src="./img/sun1.png">
+
+☔️ 🌧️ 🌈 have fun!!!
+
+<img src="./img/sun2.png">
 
 ## Licence
 

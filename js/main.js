@@ -30,6 +30,11 @@ function search(event) {
 function showTemperature(response) {
   let temperature = Math.round(response.data.temperature.current);
 
+  /**
+   * selecting id to construct an image element base on the condition url
+   *  from the weather app then we inyected into the icon element
+   */
+
   let cityElement = document.querySelector("#temperature");
   cityElement.innerHTML = temperature + "°";
   let descriptionElement = document.querySelector("#description");
@@ -43,7 +48,9 @@ function showTemperature(response) {
   let timeElement = document.querySelector("#time");
   let date = new Date(response.data.time * 1000);
   timeElement.innerHTML = formatDate(date);
-  console.log(response.data);
+
+  let iconElement = document.querySelector("#icon");
+  iconElement.innerHTML = `<img src="${response.data.condition.icon_url}"/>`;
 }
 
 function formatDate(date) {
@@ -59,6 +66,9 @@ function formatDate(date) {
     "Saturday",
   ];
   let day = days[date.getDay()];
+  if (minutes < 10) {
+    minutes = `0${minutes}`;
+  }
   return `${day} ${hours}:${minutes}`;
 }
 
@@ -66,7 +76,7 @@ let form = document.querySelector("#searchTab");
 form.addEventListener("submit", search);
 
 /**
- * method  need to returns a collection of elements with the given name.
- * Then,.... event listener function on click will log-"click" to the console &
- *  call the function
+ * Method  need to returns a collection of elements with the given name.
+ * The event listener function on click will log-"click" to the console &
+ *  then call the function.
  */

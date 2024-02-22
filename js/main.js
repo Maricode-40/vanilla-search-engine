@@ -10,6 +10,7 @@ function search(event) {
   let h1 = document.querySelector("h1");
 
   let city = searchInput.value;
+
   /**
    * calling api axios
    */
@@ -31,6 +32,13 @@ function showTemperature(response) {
 
   let cityElement = document.querySelector("#temperature");
   cityElement.innerHTML = temperature + "°";
+  let descriptionElement = document.querySelector("#description");
+  descriptionElement.innerHTML = response.data.condition.description;
+  let humitidyElement = document.querySelector("#humidity");
+  humitidyElement.innerHTML = `Humidity ${response.data.temperature.humidity}%`;
+
+  let speedyElement = document.querySelector("#speedy");
+  speedyElement.innerHTML = ` Wind: ${response.data.wind.speed} km/h`;
 }
 
 let form = document.querySelector("#searchTab");

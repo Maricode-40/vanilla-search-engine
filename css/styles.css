@@ -7,8 +7,8 @@
 }
 
 button:hover {
-  background-color: blueviolet;
-  color: white;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
 li {
@@ -51,7 +51,7 @@ footer {
 
 #temperature {
   background-color: #f9f7fd;
-  font-weight: bolder;
+  font-weight: bold;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: xx-large;
   border-radius: 5%;

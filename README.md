@@ -28,7 +28,7 @@ Vanilla Weather App project
 
 ## Objective🎯
 
-This weather application will provide you with real-time weather information, forecasts, date and time in other cities which can help you make better decisions about your day-to-day activities.
+This weather application will provide you with current date, real-time data information about weather from other cities which can help you make better decisions about your day activities.
 
 ## About the project-🔎
 

@@ -39,6 +39,27 @@ function showTemperature(response) {
 
   let speedyElement = document.querySelector("#speedy");
   speedyElement.innerHTML = ` Wind: ${response.data.wind.speed} km/h`;
+
+  let timeElement = document.querySelector("#time");
+  let date = new Date(response.data.time * 1000);
+  timeElement.innerHTML = formatDate(date);
+  console.log(response.data);
+}
+
+function formatDate(date) {
+  let minutes = date.getMinutes();
+  let hours = date.getHours();
+  let days = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
+  let day = days[date.getDay()];
+  return `${day} ${hours}:${minutes}`;
 }
 
 let form = document.querySelector("#searchTab");
